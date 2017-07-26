@@ -1,0 +1,107 @@
+/*******************************
+ * S I T E   V A R I A B L E S *
+ *******************************/
+
+//Div colours
+$sidebar: #e3e3e3;
+
+//Colours
+$background: #222;
+$font: #fff;
+$featurebox: #333;
+
+/*************************
+ * S I T E   B A S I C S *
+ *************************/
+body {
+  background: $background;
+  color: $font;
+  height: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  color: darken($font, 5%);
+  text-decoration: none;
+  border-bottom: 2px dotted darken($font, 5%);
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Bellefair', serif;
+}
+
+#container {
+  width: 100%;
+}
+
+#banner {
+  width: 100%;
+  height: 200px;
+  background-image: url(/assets/images/site/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+
+  #header {
+    width: 50%;
+    text-align: center;
+    padding: 3% 0;
+    color: $font;
+    display: block;
+    margin: 5% auto;
+    font-size: 18pt;
+  }
+}
+
+#content {
+  width: 80%;
+  margin: 5% auto;
+}
+
+.featurebox {
+  display: inline-block;
+  margin: 0em 1em 5em 0em;
+  width: 300px;
+  border: 1px solid $featurebox;
+  border-radius: 1em 1em 0em 0em;
+  background: $featurebox;
+
+  .graphic {
+    height: 100%;
+    overflow: hidden;
+
+    img {
+      width: 50%;
+      height: 50%;
+      margin: 15% auto;
+      display: block;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+    }
+  }
+
+  .title {
+    text-align: center;
+    font-size: 15pt;
+    color: darken($font, 30%);
+    padding: 1em 0.5em;
+    background: darken($featurebox, 5%);
+
+    .about {
+      font-size: 10pt;
+    }
+  }
+}
+
+#footer {
+  background: lighten($background, 5%);
+  border-top: 2px solid darken($background, 5%);
+  width: 100%;
+
+  p {
+    font-size: 10pt;
+    padding: 0em 5em;
+  }
+}
+
+

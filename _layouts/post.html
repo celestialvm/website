@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }}</title>
+    <link rel="icon" href="/assets/images/site/hd-blogo-16x16.png"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ "/assets/css/font-awesome.min.css" | relative_url }}" type="text/css" />
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" type="text/css" />
+</head>
+<body>
+<div class="pure-g">
+    <div id="main-body" class="pure-u-1-1">
+        <div id="content">
+            {% include blog_post.html %}
+        </div>
+    </div>
+</div>
+<div id="footer">
+    {% include footer.html %}
+</div>
+<script id="dsq-count-scr" src="//http-harrydenley-com.disqus.com/count.js" async></script>
+<script type="text/javascript">
+    var __rodeo_config = {
+        'clientId': 'f7e61e2fa233d9aeb1b98346b9049eb40618650915c7eda0d60c4bf556db6a3e',
+        'theme': 'feverfew'
+    };
+
+    var d = document.getElementsByTagName('head')[0],
+        s = document.createElement('script');
+
+    s.type = 'text/javascript';
+    s.src = '//cdn.emoji.rodeo/dist.js';
+    d.appendChild(s);
+</script>
+</body>
+</html>

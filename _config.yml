@@ -1,0 +1,29 @@
+title: CelestialVM
+email: none
+description: > # this means to ignore newlines until "baseurl:"
+  CelestialVM is a virtual box for Ethereum related things, managed via Vagrant.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: sniko_
+github_username:  celestialvm
+social:
+  stackexchange: 3595236
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  _plugins
+layouts_dir:  _layouts
+data_dir:     _data
+includes_dir: _partials
+collections:
+  posts:
+    output:   true

@@ -1,0 +1,78 @@
+/*******************************
+ * S I T E   V A R I A B L E S *
+ *******************************/
+/*************************
+ * S I T E   B A S I C S *
+ *************************/
+body {
+  background: #222;
+  color: #fff;
+  height: 100%;
+  font-family: 'Roboto Condensed', sans-serif; }
+
+a {
+  color: #f2f2f2;
+  text-decoration: none;
+  border-bottom: 2px dotted #f2f2f2; }
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bellefair', serif; }
+
+#container {
+  width: 100%; }
+
+#banner {
+  width: 100%;
+  height: 200px;
+  background-image: url(/assets/images/site/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; }
+  #banner #header {
+    width: 50%;
+    text-align: center;
+    padding: 3% 0;
+    color: #fff;
+    display: block;
+    margin: 5% auto;
+    font-size: 18pt; }
+
+#content {
+  width: 80%;
+  margin: 5% auto; }
+
+.featurebox {
+  display: inline-block;
+  margin: 0em 1em 5em 0em;
+  width: 300px;
+  border: 1px solid #333;
+  border-radius: 1em 1em 0em 0em;
+  background: #333; }
+  .featurebox .graphic {
+    height: 100%;
+    overflow: hidden; }
+    .featurebox .graphic img {
+      width: 50%;
+      height: 50%;
+      margin: 15% auto;
+      display: block;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%); }
+  .featurebox .title {
+    text-align: center;
+    font-size: 15pt;
+    color: #b3b3b3;
+    padding: 1em 0.5em;
+    background: #262626; }
+    .featurebox .title .about {
+      font-size: 10pt; }
+
+#footer {
+  background: #2f2f2f;
+  border-top: 2px solid #151515;
+  width: 100%; }
+  #footer p {
+    font-size: 10pt;
+    padding: 0em 5em; }
+
+/*# sourceMappingURL=main.css.map */
